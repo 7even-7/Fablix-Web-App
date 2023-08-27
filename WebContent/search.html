@@ -1,0 +1,38 @@
+<!-- This page will be seen if you logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Search Page</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<div class="nav">
+  <a href="login.html">Login</a>
+  <a href="index.html">Home Page</a>
+  <a href="checkout.html">Checkout</a>
+
+</div>
+<form ACTION="#" id="search" METHOD="get">
+  <label>Search Movie by title, year, director, star's name or multiples(e.g. Chief Zabu, 2016, Nell Cohen)</label>
+  <br>
+  <label>
+    <input id = "title" name="title" type="text" placeholder="Enter movie title">
+    <input id = "year" name="year" type="number" placeholder="Enter movie year">
+    <input id = "director"  name="director" type="text" placeholder="Enter movie director">
+    <input id = "starName"  name="starName" type="text" placeholder="Enter movie star name">
+
+
+
+  </label>
+  <input type="submit" VALUE="Search">
+</form>
+<div id="item_list"></div>
+
+<!-- include your own JS file -->
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script type='text/javascript' src='./search.js'></script>
+</body>
+</html>

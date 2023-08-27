@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Add a Movie</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+<form id="add_movie_form" method="post" style="text-align: center; margin: 35px">
+    <label style="margin: 15px"><b>Movie ID</b></label>
+    <br>
+    <label>
+        <input name="id" placeholder="Enter Movie ID" type="text" style="margin: 10px" required>
+    </label>
+    <br>
+    <label style="margin: 15px"><b>Movie Title</b></label>
+    <br>
+    <label>
+        <input name="title" placeholder="Enter Movie Title" type="text" style="margin: 10px" required>
+    </label>
+    <br>
+    <label style="margin: 15px"><b>Movie Year</b></label>
+    <br>
+    <label>
+        <input name="year" placeholder="Enter Movie Year" type="number" style="margin: 10px" required>
+    </label>
+    <br>
+    <label style="margin: 15px"><b>Movie Director Name</b></label>
+    <br>
+    <label>
+        <input name="director" placeholder="Enter Movie Director" type="text" style="margin: 10px" required>
+    </label>
+    <br>
+    <label style="margin: 15px"><b>Star Name</b></label>
+    <br>
+    <label>
+        <input name="star_name" placeholder="Enter Movie Star Name" type="text" style="margin: 10px" required>
+    </label>
+    <br>
+    <label style="margin: 15px"><b>Movie Genre</b></label>
+    <br>
+    <label>
+        <input name="genre" placeholder="Enter Movie Genre" type="text" style="margin: 10px" required>
+    </label>
+    <br>
+    <input type="submit" value="Add Movie" style="margin: 25px">
+</form>
+
+<div id="result_message" style="text-align: center; margin: 35px"></div>
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./addMovie.js"></script>
+
+<a href="employeeDashboard.html">
+    <button id="backButton" style="text-align: center; margin: 35px">Back</button>
+</a>
+
+</body>
+</html>

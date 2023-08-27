@@ -1,0 +1,58 @@
+<!-- This page will be seen if you logged in -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="home.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        h2 {
+            font-size: 2em;
+            text-align: center;
+            color: #333;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 1.2em;
+            text-align: center;
+            color: #666;
+            margin-top: 20px;
+        }
+    </style>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+<div class="nav">
+    <a href="login.html">Login</a>
+<!--    <a href="search.html">Search By Category</a>-->
+    <a href="browse.html">Browse Movie</a>
+    <a href="cart.html">Checkout</a>
+</div>
+<h2>Welcome to Fabflix!</h2>
+<p>Click on <strong>Browse</strong> to start browsing your favorite movies!</p>
+<script src="./fullTextSearchRes.js"></script>
+<h2>
+    <form ACTION="#" id="searchForm" METHOD="get">
+        <br>
+        <label>
+            <input type="text" name="query" id="autocomplete"/>
+        </label>
+        <input type="submit" value="Search">
+    </form>
+</h2>
+
+<!-- include your own JS file -->
+<script type='text/javascript' src='./fullTextSearch.js'></script>
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+<script type='text/javascript' src='index.js'></script>
+<script type='text/javascript' src='jquery.autocomplete.js'></script>
+</body>
+</html>

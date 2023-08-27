@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        /*checkout page styling*/
+        #checkout {
+            padding-top: 5%;
+            text-align: center;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            width: 600px;
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+        }
+
+        #checkout label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #checkout input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        #checkout input[type="submit"] {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        #checkout input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <a href="index.html">Home Page</a>
+    <a href="cart.html">Checkout</a>
+
+</div>
+<form ACTION="#" id="checkout" METHOD="post">
+    <h2><label>Please enter your credit card information: </label></h2>
+    <br>
+    <label>
+        <label for="first-name">First Name:</label>
+        <input name="firstName" id="first-name" placeholder="First Name" required="required" type="text" style="margin: 25px;">
+        <br>
+
+        <label for="last-name">Last Name:</label>
+        <input name="lastName" id="last-name" placeholder="Last Name" required="required" type="text" style="margin: 25px;">
+        <br>
+        
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="johndoe@email.com" required="required"  style="margin: 25px;">
+        <br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address" placeholder="123 uci st apt1a" required = “required" style="margin: 25px;">
+        <br>
+
+        <label for="credit-card-number">Credit Card Number:</label>
+        <input name="creditCardNumber" id="credit-card-number" placeholder="Credit Card Number" required="required" type="text" style="margin: 25px;" >
+        <br>
+
+        <label for="expiration-date">Expiration Date:</label>
+        <input type="text" id="expiration-date" name="expiration-date" placeholder="YY-MM-DD" required = "required" style="margin: 25px;" >
+        <br>
+    </label>
+    <input type="submit" VALUE="Place order" style="margin: 25px;">
+</form>
+</body>
+</html>
